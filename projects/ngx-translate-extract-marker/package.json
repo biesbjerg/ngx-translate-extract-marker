@@ -1,7 +1,7 @@
 {
   "name": "@biesbjerg/ngx-translate-extract-marker",
   "description": "Function to manually mark strings to be extracted using ngx-translate-extract",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/biesbjerg/ngx-translate-extract-marker.git"
