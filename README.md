@@ -1,27 +1,25 @@
-# NgxTranslateExtractMarkerApp
+## Mark strings for extraction using a marker function
+If, for some reason, you want to extract strings not passed directly to `TranslateService`'s `get()` or `instant()` methods, you can wrap them in a custom marker function to let `ngx-translate-extract` know you want to extract them.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+Install marker function:
+`npm install @biesbjerg/ngx-translate-extract-marker`
 
-## Development server
+```ts
+import { extract } from '@biesbjerg/ngx-translate-extract-marker';
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+extract('Extract me');
+```
 
-## Code scaffolding
+Add the `marker` argument when running the extract script:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`ngx-translate-extract ... -m extract`
 
-## Build
+You can alias the marker function if needed:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```ts
+import { extract as _ } from '@biesbjerg/ngx-translate-extract-marker';
 
-## Running unit tests
+_('Extract me');
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+`ngx-translate-extract ... -m _`
