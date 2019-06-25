@@ -5,21 +5,21 @@ Install marker function:
 `npm install @biesbjerg/ngx-translate-extract-marker`
 
 ```ts
-import { extract } from '@biesbjerg/ngx-translate-extract-marker';
+import { marker } from '@biesbjerg/ngx-translate-extract-marker';
 
-extract('Extract me');
+marker('Extract me');
 ```
 
 Add the `marker` argument when running the extract script:
 
-`ngx-translate-extract ... -m extract`
+`ngx-translate-extract ... --marker marker`
 
 You can alias the marker function if needed:
 
 ```ts
-import { extract as _ } from '@biesbjerg/ngx-translate-extract-marker';
+import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 
 _('Extract me');
 ```
 
-`ngx-translate-extract ... -m _`
+`ngx-translate-extract ... --marker _`
