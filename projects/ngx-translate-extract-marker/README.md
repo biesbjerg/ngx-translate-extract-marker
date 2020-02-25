@@ -2,10 +2,10 @@
 If, for some reason, you want to extract strings not passed directly to `TranslateService`'s `get()` or `instant()` methods, you can wrap them in a custom marker function to let `ngx-translate-extract` know you want to extract them.
 
 Install marker function:
-`npm install shavenzov/ngx-translate-extract-marker`
+`npm install @shavenzov/ngx-translate-extract-marker`
 
 ```ts
-import { marker } from 'shavenzov/ngx-translate-extract-marker';
+import { marker } from '@shavenzov/ngx-translate-extract-marker';
 
 marker('Extract me');
 ```
@@ -17,7 +17,7 @@ Add the `marker` argument when running the extract script:
 You can alias the marker function if needed:
 
 ```ts
-import { marker as $ } from 'shavenzov/ngx-translate-extract-marker';
+import { marker as $ } from '@shavenzov/ngx-translate-extract-marker';
 
 $('Extract me');
 

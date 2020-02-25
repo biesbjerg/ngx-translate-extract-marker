@@ -1,6 +1,6 @@
 {
-  "name": "shavenzov/ngx-translate-extract-marker",
-  "description": "Function to manually mark strings to be extracted using shavenzov/ngx-translate-extract",
+  "name": "@shavenzov/ngx-translate-extract-marker",
+  "description": "Function to manually mark strings to be extracted using @shavenzov/ngx-translate-extract",
   "version": "1.0.1",
   "repository": {
     "type": "git",
