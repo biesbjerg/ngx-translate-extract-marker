@@ -97,19 +97,6 @@
             "scripts": []
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -148,18 +135,6 @@
             "main": "projects/ngx-translate-extract-marker/src/test.ts",
             "tsConfig": "projects/ngx-translate-extract-marker/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-translate-extract-marker/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ngx-translate-extract-marker/tsconfig.lib.json",
-              "projects/ngx-translate-extract-marker/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
