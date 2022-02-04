@@ -17,7 +17,10 @@ module.exports = function (config) {
     },
     coverageReporter: {
       dir: require('path').join(__dirname, '../../coverage/ngx-translate-extract-marker'),
-      reporters: ['html', 'lcovonly'],
+      reporters: [
+        { type: 'html' },
+        { type: 'lcovonly' },
+      ],
       fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml'],
