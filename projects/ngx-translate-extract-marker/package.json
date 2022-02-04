@@ -12,6 +12,9 @@
     "url": "https://github.com/biesbjerg/ngx-translate-extract-marker/issues"
   },
   "homepage": "https://github.com/biesbjerg/ngx-translate-extract-marker",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "keywords": [
 	"angular",
 	"ngx-translate",
