@@ -138,6 +138,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngx-translate-extract-marker-app"
+    }
+  }
 }
